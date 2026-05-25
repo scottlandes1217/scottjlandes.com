@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta -->
+  <title>Scott Landes | Software Engineer &amp; Web Designer | Bend, OR</title>
+  <meta name="description" content="Scott Landes is a Software Engineer and Web Designer based in Bend, Oregon with 10+ years of experience in Salesforce development, Lightning Web Components, CPQ, and building beautiful modern websites for local businesses." />
+  <meta name="keywords" content="Scott Landes, Software Engineer, Web Designer, Bend Oregon, Salesforce Developer, Lightning Web Components, Apex, CPQ, web design, Hubbub CRM, Hoozr" />
+  <meta name="author" content="Scott Landes" />
+  <link rel="canonical" href="https://scottjlandes.com" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://scottjlandes.com" />
+  <meta property="og:title" content="Scott Landes | Software Engineer &amp; Web Designer | Bend, OR" />
+  <meta property="og:description" content="Software Engineer and Web Designer based in Bend, Oregon. Specializing in Salesforce, Lightning Web Components, CPQ, and modern web design for local businesses." />
+  <meta property="og:site_name" content="Scott J. Landes" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Scott Landes | Software Engineer &amp; Web Designer | Bend, OR" />
+  <meta name="twitter:description" content="Software Engineer and Web Designer based in Bend, Oregon. Salesforce expert, LWC developer, and creator of Hubbub and Hoozr." />
+
+  <!-- Schema.org Person JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Scott Landes",
+    "jobTitle": "Software Engineer & Web Designer",
+    "url": "https://scottjlandes.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bend",
+      "addressRegion": "OR",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/scott-and-vega",
+      "https://www.instagram.com/scottnvega/"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       Navigation
+  ============================================================ -->
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="container">
+        <div class="nav__inner">
+          <a href="#" class="nav__logo" aria-label="Scott J. Landes — Home">Scott J. Landes</a>
+
+          <ul class="nav__links" role="list">
+            <li><a href="#" class="nav__link active">Home</a></li>
+            <li><a href="pages/hubbub.html" class="nav__link">Hubbub</a></li>
+            <li><a href="pages/web-design.html" class="nav__link">Web Design</a></li>
+            <li><a href="pages/salesforce.html" class="nav__link">Salesforce</a></li>
+            <li><a href="pages/hoozr.html" class="nav__link">Hoozr</a></li>
+            <li><a href="pages/kings.html" class="nav__link">Kings</a></li>
+          </ul>
+
+          <button class="nav__ham" aria-label="Open mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile overlay menu -->
+    <div class="nav__mobile" aria-hidden="true">
+      <a href="#" class="nav__mobile-link">Home</a>
+      <a href="pages/hubbub.html" class="nav__mobile-link">Hubbub</a>
+      <a href="pages/web-design.html" class="nav__mobile-link">Web Design</a>
+      <a href="pages/salesforce.html" class="nav__mobile-link">Salesforce</a>
+      <a href="pages/hoozr.html" class="nav__mobile-link">Hoozr</a>
+      <a href="pages/kings.html" class="nav__mobile-link">Kings</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         Hero
+    ============================================================ -->
+    <section class="hero" id="home" data-section="home">
+      <div class="hero__bg"></div>
+      <div class="hero__grid"></div>
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge reveal">
+            <span class="hero__badge-dot"></span>
+            Available for Web Projects
+          </div>
+
+          <h1 class="hero__title reveal reveal-d1">
+            Scott Landes<br />
+            <span class="gradient-text">Software Engineer &amp; Designer</span>
+          </h1>
+
+          <p class="hero__subtitle reveal reveal-d2">
+            I build modern software, architect Salesforce solutions, and craft beautiful web experiences — from elegant component-driven UIs to enterprise-scale CRM systems. Based in Bend, Oregon.
+          </p>
+
+          <div class="hero__actions reveal reveal-d3">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="mailto:scottandvega@gmail.com" class="btn btn-ghost">Let's Connect</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         About
+    ============================================================ -->
+    <section id="about" data-section="about">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Left: Text -->
+          <div>
+            <p class="label reveal">About Me</p>
+            <h2 class="section-title reveal reveal-d1">Building with purpose,<br />designing with intent</h2>
+            <p class="section-desc reveal reveal-d2">
+              I'm Scott — a Software Engineer and Web Designer living in Bend, Oregon. For over a decade I've been passionate about building elegant, efficient software that solves real problems.
+            </p>
+            <p class="section-desc reveal reveal-d3">
+              <br />From Salesforce CPQ implementations and Lightning Web Components to pixel-perfect marketing sites for local businesses, I love the full spectrum of the craft. When I'm not coding, you'll find me exploring the trails and rivers of Central Oregon.
+            </p>
+          </div>
+
+          <!-- Right: Stats -->
+          <div>
+            <div class="about-stats reveal reveal-d2">
+              <div class="stat">
+                <div class="stat__num">10+</div>
+                <div class="stat__label">Years Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">5+</div>
+                <div class="stat__label">Salesforce Projects</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">&#8734;</div>
+                <div class="stat__label">Local Businesses Served</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">2</div>
+                <div class="stat__label">Apps in Development</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Projects
+    ============================================================ -->
+    <section id="projects" data-section="projects">
+      <div class="container">
+        <p class="label reveal">What I'm Building</p>
+        <h2 class="section-title reveal reveal-d1">Projects &amp; Expertise</h2>
+        <p class="section-desc reveal reveal-d2">A mix of client work, passion projects, and platform expertise — all aimed at building things that matter.</p>
+
+        <div class="projects-grid">
+
+          <!-- Hubbub -->
+          <a href="pages/hubbub.html" class="card proj-card reveal reveal-d1" aria-label="Hubbub — Coming Soon">
+            <div class="proj-card__icon" aria-hidden="true">💬</div>
+            <span class="proj-card__badge badge-soon" aria-label="Status: Coming Soon">Coming Soon</span>
+            <h3 class="proj-card__title">Hubbub</h3>
+            <p class="proj-card__desc">A modern CRM platform built for the way teams actually work. Smart pipelines, beautiful UI, and automation that saves hours.</p>
+            <span class="proj-card__link">Coming Soon</span>
+          </a>
+
+          <!-- Web Design -->
+          <a href="pages/web-design.html" class="card proj-card reveal reveal-d2" aria-label="Web Design — Learn More">
+            <div class="proj-card__icon" aria-hidden="true">🎨</div>
+            <span class="proj-card__badge badge-live" aria-label="Status: Live">Live</span>
+            <h3 class="proj-card__title">Web Design</h3>
+            <p class="proj-card__desc">Crafting fast, mobile-first websites for local businesses that actually convert visitors into customers.</p>
+            <span class="proj-card__link">Learn More →</span>
+          </a>
+
+          <!-- Salesforce -->
+          <a href="pages/salesforce.html" class="card proj-card reveal reveal-d3" aria-label="Salesforce — Explore Skills">
+            <div class="proj-card__icon" aria-hidden="true">⚡</div>
+            <span class="proj-card__badge badge-live" aria-label="Status: Live">Live</span>
+            <h3 class="proj-card__title">Salesforce</h3>
+            <p class="proj-card__desc">10+ years architecting, developing, and administering Salesforce orgs. CPQ, LWC, Flow, Apex, integrations — from scratch to enterprise scale.</p>
+            <span class="proj-card__link">Explore Skills →</span>
+          </a>
+
+          <!-- Hoozr -->
+          <a href="pages/hoozr.html" class="card proj-card reveal reveal-d4" aria-label="Hoozr — Coming Soon">
+            <div class="proj-card__icon" aria-hidden="true">🐾</div>
+            <span class="proj-card__badge badge-soon" aria-label="Status: Coming Soon">Coming Soon</span>
+            <h3 class="proj-card__title">Hoozr</h3>
+            <p class="proj-card__desc">Connecting volunteers with animal shelters and building community around local outreach. Social good, beautifully designed.</p>
+            <span class="proj-card__link">Coming Soon</span>
+          </a>
+
+          <!-- Kings -->
+          <a href="pages/kings.html" class="card proj-card reveal reveal-d1" aria-label="Kings — Coming Soon">
+            <div class="proj-card__icon" aria-hidden="true">♟️</div>
+            <span class="proj-card__badge badge-soon" aria-label="Status: Coming Soon">Coming Soon</span>
+            <h3 class="proj-card__title">Kings</h3>
+            <p class="proj-card__desc">A chess RPG adventure game for iOS where every piece has a story, every move shapes the kingdom, and strategy meets epic storytelling.</p>
+            <span class="proj-card__link">Coming Soon</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Skills
+    ============================================================ -->
+    <section id="skills" data-section="skills">
+      <div class="container">
+        <p class="label reveal">Tech Stack</p>
+        <h2 class="section-title reveal reveal-d1">Skills &amp; Technologies</h2>
+        <p class="section-desc reveal reveal-d2">The tools and platforms I use to build reliable, scalable, and beautiful software.</p>
+
+        <div class="skills-grid">
+          <div class="skill-chip reveal">
+            <span class="skill-chip__icon" aria-hidden="true">⚡</span>
+            Salesforce
+          </div>
+          <div class="skill-chip reveal reveal-d1">
+            <span class="skill-chip__icon" aria-hidden="true">💻</span>
+            Apex
+          </div>
+          <div class="skill-chip reveal reveal-d2">
+            <span class="skill-chip__icon" aria-hidden="true">🔧</span>
+            Lightning Web Components
+          </div>
+          <div class="skill-chip reveal reveal-d3">
+            <span class="skill-chip__icon" aria-hidden="true">🏗️</span>
+            Salesforce CPQ
+          </div>
+          <div class="skill-chip reveal">
+            <span class="skill-chip__icon" aria-hidden="true">🎨</span>
+            HTML / CSS
+          </div>
+          <div class="skill-chip reveal reveal-d1">
+            <span class="skill-chip__icon" aria-hidden="true">📜</span>
+            JavaScript
+          </div>
+          <div class="skill-chip reveal reveal-d2">
+            <span class="skill-chip__icon" aria-hidden="true">🔀</span>
+            Git
+          </div>
+          <div class="skill-chip reveal reveal-d3">
+            <span class="skill-chip__icon" aria-hidden="true">🔌</span>
+            REST APIs
+          </div>
+          <div class="skill-chip reveal">
+            <span class="skill-chip__icon" aria-hidden="true">📋</span>
+            Agile / Scrum
+          </div>
+          <div class="skill-chip reveal reveal-d1">
+            <span class="skill-chip__icon" aria-hidden="true">✏️</span>
+            UI / UX Design
+          </div>
+          <div class="skill-chip reveal reveal-d2">
+            <span class="skill-chip__icon" aria-hidden="true">📱</span>
+            Responsive Design
+          </div>
+          <div class="skill-chip reveal reveal-d3">
+            <span class="skill-chip__icon" aria-hidden="true">🔍</span>
+            SEO
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Experience
+    ============================================================ -->
+    <section id="experience" data-section="experience">
+      <div class="container">
+        <p class="label reveal">Career</p>
+        <h2 class="section-title reveal reveal-d1">Work Experience</h2>
+
+        <ul class="experience-list" role="list">
+
+          <!-- G5 -->
+          <li class="exp-item reveal reveal-d2">
+            <div class="exp-item__period">2016 — Present</div>
+            <div>
+              <div class="exp-item__role">Systems Engineer</div>
+              <div class="exp-item__company">G5 Search Marketing · Bend, OR</div>
+              <ul class="exp-item__bullets" role="list">
+                <li>Designed and built a custom Salesforce CPQ solution from the ground up</li>
+                <li>Built client-facing experience portals on the Salesforce platform</li>
+                <li>Developed Aura components and Lightning Web Components for internal tooling</li>
+                <li>Created custom Flow components to extend declarative automation</li>
+                <li>Automated complex business processes to reduce manual overhead</li>
+                <li>Architected and maintained Salesforce integrations with third-party systems</li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- IBEX -->
+          <li class="exp-item reveal reveal-d3">
+            <div class="exp-item__period">2010 — 2015</div>
+            <div>
+              <div class="exp-item__role">Technical Support Advisor</div>
+              <div class="exp-item__company">IBEX Global · Bend, OR</div>
+              <ul class="exp-item__bullets" role="list">
+                <li>Served as the Tier-1 escalation point for all complex technical issues</li>
+                <li>Acted as Subject Matter Expert for Mac hardware and software</li>
+                <li>Created and delivered training materials for new and existing team members</li>
+                <li>Attended weekly SME meetings to stay current on platform changes</li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA Banner
+    ============================================================ -->
+    <section aria-label="Contact call to action">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2 class="cta-banner__title">Let's Build Something Together</h2>
+          <p class="cta-banner__desc">Whether you need a new website, Salesforce expertise, or want to collaborate on one of my projects — I'd love to hear from you.</p>
+          <div class="hero__actions">
+            <a href="mailto:scottandvega@gmail.com" class="btn btn-primary">Get In Touch</a>
+            <a href="https://www.linkedin.com/in/scott-and-vega" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       Footer
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <a href="#" class="footer__logo" aria-label="Scott J. Landes — Back to top">Scott J. Landes</a>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#">Home</a>
+          <a href="pages/hubbub.html">Hubbub</a>
+          <a href="pages/web-design.html">Web Design</a>
+          <a href="pages/salesforce.html">Salesforce</a>
+          <a href="pages/hoozr.html">Hoozr</a>
+          <a href="pages/kings.html">Kings</a>
+        </nav>
+
+        <div class="footer__social">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/scott-and-vega" target="_blank" rel="noopener noreferrer" aria-label="Scott Landes on LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/scottnvega/" target="_blank" rel="noopener noreferrer" aria-label="Scott Landes on Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Scott Landes on GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+          </a>
+        </div>
+
+        <p class="footer__copy">© 2025 Scott Landes. Built with care in Bend, Oregon.</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
