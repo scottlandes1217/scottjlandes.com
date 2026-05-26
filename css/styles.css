@@ -259,6 +259,8 @@ section { padding: clamp(4rem,10vw,7rem) 0; }
   50%      { opacity:.4; transform:scale(.7); }
 }
 
+.hero__logo { display: block; margin-bottom: 1.5rem; }
+
 .hero__title {
   font-size: clamp(2.75rem, 8vw, 5.75rem);
   font-weight: 800;
