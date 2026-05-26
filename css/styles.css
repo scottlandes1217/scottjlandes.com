@@ -259,7 +259,7 @@ section { padding: clamp(4rem,10vw,7rem) 0; }
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--accent);
+  background: #22c55e;
   animation: dot-pulse 2.2s ease-in-out infinite;
 }
 
