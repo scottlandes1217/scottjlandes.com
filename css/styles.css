@@ -828,6 +828,7 @@ section { padding: clamp(4rem,10vw,7rem) 0; }
 }
 
 @media (max-width: 520px) {
+  .hero__title { font-size: 2.1rem; }
   .hero__actions { flex-direction: column; align-items: flex-start; }
   .hero__actions .btn { width: 100%; justify-content: center; }
   .about-stats { grid-template-columns: 1fr 1fr; }
