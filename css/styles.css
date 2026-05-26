@@ -55,11 +55,14 @@ body {
   z-index: 0;
   pointer-events: none;
   background:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
     radial-gradient(ellipse 80% 70% at 5%  20%,  rgba(124,58,237,0.42) 0%, transparent 60%),
     radial-gradient(ellipse 65% 65% at 92% 35%,  rgba(168,85,247,0.36) 0%, transparent 55%),
     radial-gradient(ellipse 70% 60% at 15% 65%,  rgba(124,58,237,0.30) 0%, transparent 60%),
     radial-gradient(ellipse 75% 65% at 88% 78%,  rgba(168,85,247,0.32) 0%, transparent 55%),
     radial-gradient(ellipse 60% 55% at 50% 50%,  rgba(124,58,237,0.18) 0%, transparent 65%);
+  background-size: 72px 72px, 72px 72px, cover, cover, cover, cover, cover;
 }
 
 img, video { max-width: 100%; height: auto; display: block; }
@@ -381,7 +384,7 @@ section { padding: clamp(4rem,10vw,7rem) 0; }
 
 /* ---- Cards ----------------------------------------------- */
 .card {
-  background: var(--bg-card);
+  background: rgba(15,23,42,0.75);
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
   padding: 2rem;
@@ -867,12 +870,16 @@ section { padding: clamp(4rem,10vw,7rem) 0; }
 
 [data-theme="light"] .page-bg {
   background:
+    linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px),
     radial-gradient(ellipse 80% 70% at 5%  20%,  rgba(124,58,237,0.14) 0%, transparent 60%),
     radial-gradient(ellipse 65% 65% at 92% 35%,  rgba(168,85,247,0.12) 0%, transparent 55%),
     radial-gradient(ellipse 70% 60% at 15% 65%,  rgba(124,58,237,0.10) 0%, transparent 60%),
     radial-gradient(ellipse 75% 65% at 88% 78%,  rgba(168,85,247,0.11) 0%, transparent 55%),
     radial-gradient(ellipse 60% 55% at 50% 50%,  rgba(124,58,237,0.06) 0%, transparent 65%);
+  background-size: 72px 72px, 72px 72px, cover, cover, cover, cover, cover;
 }
+[data-theme="light"] .card { background: rgba(255,255,255,0.82); }
 
 [data-theme="light"] .nav.scrolled {
   background: rgba(244,246,255,0.92);
